@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--https://github.com/phonegap/phonegap-start/blob/master/www/config.xml-->
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0" 
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.shivam.crm" 
+        version="1.01"
+        versionCode = "180006" >
+    <name>ShivamCRM</name>
+    <description>
+        Shivam Medisoft CRM Using Shivam FrameWork.
+    </description>
+    <author email="crm.shivam18@gmail.com" href="http://shivammedisoft.com">
+        Shivam SWD Team
+    </author>
+    <content src="index.html"/>
+   <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+     <preference name="StatusBarBackgroundColor" value="#31708F" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" /> 
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-targetSdkVersion" value="28"/> 
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="LoadingDialog" value="Please wait, the app is loading"/>
+    <preference name="AllowInlineMediaPlayback" value="true"/>
+    <preference name="SplashScreenDelay" value="0000"/>
+    <preference name="KeepRunning" value="true"/>
+     <preference name="SplashMaintainAspectRatio" value="true" />
+     <plugin name="cordova.plugins.diagnostic" />
+     <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
+    <!-- Plugins -->
+    
+<!--    <feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+</feature>-->
+    <!-- Core plugins -->
+       <!--    <plugin spec="https://github.com/apache/cordova-plugin-camera.git" source="git" />-->
+     <plugin name="cordova-plugin-camera" source="npm" spec="2.3.1" >
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
+        <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
+    </plugin>
+    <plugin name="cordova-plugin-datepicker" source="npm" />
+    <plugin name="cordova-plugin-dialogs" source="npm"/>
+    <!--    <plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />  -->
+    <plugin name="cordova-plugin-media-capture" source="npm" spec="1.0.0">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
+        <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
+    </plugin>   
+    
+   
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+     <feature name="http://api.phonegap.com/1.0/camera" />
+     <feature name="http://api.phonegap.com/1.0/file" />
+     <feature name="http://api.phonegap.com/1.0/network" />
+     <feature name="http://api.phonegap.com/1.0/notification" />
+     <plugin name="cordova-plugin-geolocation" source="npm" />
+     
+    <config-file platform="android" parent="/manifest" mode="merge">
+<application android:usesCleartextTraffic="true" />
+</config-file>
+    <platform name="ios">
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+        <string>to take pictures/scan barcodes</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+        <string>to get pictures</string>
+    </edit-config>
+    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need location access to find things nearby</string>
+    </edit-config>
+</platform>
+    
+    <plugin spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
+<!--        <plugin spec="https://github.com/apache/cordova-plugin-file.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git" source="git" />-->
+    <plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
+    <plugin spec="https://github.com/salbahra/NetworkInterfacePlugin.git" source="git" />
+<!--    <plugin spec="https://github.com/katzer/cordova-plugin-printer.git" source="git" />-->
+    <plugin spec="https://github.com/rafelbev/FileOpener.git" source="git" />
+    <plugin spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
+    <plugin spec="https://github.com/Paldom/SpinnerDialog.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
+<!--    <gap:plugin name="cordova-plugin-file" source="npm" />
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" />-->
+<!--    for android-->
+    <plugin name="cordova-plugin-file" source="npm"  spec="4.1.0" />
+    <plugin name="cordova-plugin-file-transfer" spec="~1.6.1" />
+<!--    for ios-->
+<!--    <gap:plugin name="cordova-plugin-file" source="npm"  spec="5.0.0" />
+    <plugin name="cordova-plugin-file-transfer" source="npm"  />
+    -->
+<!--     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />-->
+     
+     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
+        <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyCtFI4R6E1-YHHCFUbWEj6iVON2UD1nbQU}"/>
+    </plugin>
+     
+    <plugin name="cordova-plugin-phonedialer" source="npm" version="0.3.1"/>
+    <plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.4.0" />
+<!--    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />-->
+    <plugin name="cordova-plugin-fileopener" source="npm" />
+       <plugin name="cordova-plugin-whitelist" source="npm" version="1.3.1"/>
+    <plugin name = "cordova-plugin-inappbrowser" source="npm" version="1.6.1" />
+    <plugin name= "cordova-plugin-print-pdf" source="npm"/>
+     <plugin spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
+    <plugin spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" source="git" />
+    
+ <plugin name="phonegap-plugin-push" spec="~1.10.0">
+        <variable name="SENDER_ID" value="1:940836237549:android:f8a292892f7ae8d1e39ce4" />
+    </plugin>
+ <plugin spec="https://github.com/cjpearson/cordova-plugin-keyboard" source="git" />
+  
+    
+  
+    <plugin spec="https://github.com/andischerer/cordova-plugin-openfilenative.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
+    
+    <!-- Plugins -->
+
+
+    <!-- default-->
+<!-- <platform name="android">          
+
+    <resource-file src="CRMicons/noticon/notification_icon.png" target="res/drawable/notification_icon.png" />
+    <resource-file src="CRMicons/noticon/drawable-mdpi/notification_icon.png" target="res/drawable-mdpi/notification_icon.png" />
+    <resource-file src="CRMicons/noticon/drawable-hdpi/notification_icon.png" target="res/drawable-hdpi/notification_icon.png" />
+    <resource-file src="CRMicons/noticon/drawable-xhdpi/notification_icon.png" target="res/drawable-xhdpi/notification_icon.png" />
+    <resource-file src="CRMicons/noticon/drawable-xxhdpi/notification_icon.png" target="res/drawable-xxhdpi/notification_icon.png" />
+
+    <config-file parent="/manifest/application" target="AndroidManifest.xml">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification_icon" />
+    </config-file>
+
+</platform>  -->
+<platform name="android">   
+    <icon src="resources/CRMicons/android/icon.png" />
+    <!--android spalsh -->
+    <splash src="resources/CRMsplash/android/272by482-ldpi.png" density="ldpi" />
+    <splash src="resources/CRMsplash/android/362by642-mdpi.png" density="mdpi" />
+    <splash src="resources/CRMsplash/android/542x962-hdpi.png" density="hdpi" />
+    <splash src="resources/CRMsplash/android/722by1282-xhdpi.png" density="xhdpi" />
+    <!--    <gap:splash src="splash/android/xxhdpi.png" gap:platform="android" gap:density="port-xxhdpi" />-->
+    
+    <!--     <gap:splash src="splash/android/482by272-ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="splash/android/642by362-mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="splash/android/962by542-hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="splash/android/1282by722-xhdpi.png" gap:platform="android" gap:density="xhdpi" />-->
+    <!--    <gap:splash src="splash/android/xxhdpi.png" gap:platform="android" gap:density="land-xxhdpi" />-->
+    <!--android spalsh end -->
+	</platform>
+    <platform name="ios">
+    <!--ios spalsh -->
+    <splash src="CRMsplash/ios/320by480.png"  width="320" height="480" />
+    <splash src="CRMsplash/ios/480by320.png"  width="480" height="320" />
+    <splash src="CRMsplash/ios/640by960.png"  width="640" height="960" />
+    <splash src="CRMsplash/ios/960by640.png"  width="960" height="640" />
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <splash src="CRMsplash/ios/640by1136.png"  width="640" height="1136" />
+    <splash src="CRMsplash/ios/1136by640.png"  width="1136" height="640" />
+ 
+    <splash src="CRMsplash/ios/750by1334.png"  width="750" height="1334" />
+    <splash src="CRMsplash/ios/1334by750.png"  width="1334" height="750" />
+    <!-- iPad -->
+    <splash src="CRMsplash/ios/768by1024.png"  width="768" height="1024" />
+    <splash src="CRMsplash/ios/1024by768.png"  width="1024" height="768" />
+    <splash src="CRMsplash/ios/1024by1024.png"  width="1024" height="1024" />
+    <!-- Retina iPad -->
+    <splash src="CRMsplash/ios/1242by2208.png"  width="1242" height="2208" />
+    <splash src="CRMsplash/ios/2208by1242.png"  width="2208" height="1242" />
+    
+    <splash src="CRMsplash/ios/1536by2048.png"  width="1536" height="2048" />
+    <splash src="CRMsplash/ios/2048by1536.png"  width="2048" height="1536" />
+    <splash src="CRMsplash/ios/1242by2688.png"  width="1242" height="2688" />
+    <splash src="CRMsplash/ios/2688by1242.png"  width="2688" height="1242" />
+    <splash src="CRMsplash/ios/1125by2436.png"  width="1125" height="2436" />
+    <splash src="CRMsplash/ios/2436by1125.png"  width="2436" height="1125" />
+     <splash src="CRMsplash/ios/2732by2732.png"  width="2732" height="2732" />
+	 <!-- <splash src="splash/ios/2732by2732.png" gap:platform="ios" width="2732" height="2732" /> -->
+      <!--ios spalsh end-->
+        <icon src="CRMicons/ios/icon-60@3x.png" width="180" height="180" />
+
+        <!-- iPhone / iPod Touch  -->
+        <icon src="CRMicons/ios/icon-60@3x.png" width="180" height="180" />
+
+        <!-- iPhone / iPod Touch  -->
+        <icon src="CRMicons/ios/icon-60.png" width="60" height="60" />
+        <icon src="CRMicons/ios/icon-60@2x.png" width="120" height="120" />
+
+        <!-- iPad -->
+        <icon src="CRMicons/ios/icon-76.png"  width="76" height="76" />
+        <icon src="CRMicons/ios/icon-76@2x.png" width="152" height="152" />
+
+        <!-- Settings Icon -->
+        <icon src="CRMicons/ios/icon-small.png" width="29" height="29" />
+        <icon src="CRMicons/ios/icon-small@2x.png" width="58" height="58" />
+
+        <!-- Spotlight Icon -->
+        <icon src="CRMicons/ios/icon-40.png"  width="40" height="40" />
+        <icon src="CRMicons/ios/icon-40@2x.png" width="80" height="80" />
+        <icon src="CRMicons/ios/icon-Small-40@3x.png"  width="120" height="120" />    
+
+        <icon src="CRMicons/ios/icon.png" width="57" height="57" />
+        <icon src="CRMicons/ios/icon@2x.png"  width="114" height="114" />
+
+        <!-- iPad -->
+        <icon src="CRMicons/ios/icon-72.png" width="72" height="72" />
+        <icon src="CRMicons/ios/icon-57.png"  width="57" height="57" />
+        <icon src="CRMicons/ios/icon-72@2x.png" width="144" height="144" />
+
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="CRMicons/ios/icon-small.png" width="29" height="29" />
+        <icon src="CRMicons/ios/icon-small@2x.png" width="58" height="58" />
+
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="CRMicons/ios/50by50.png" width="50" height="50" />
+        <icon src="CRMicons/ios/100by100.png" width="100" height="100" />
+        <icon src="CRMicons/ios/1024by1024.png" width="1024" height="1024" />
+         
+    </platform>
+
+    <access origin="*"  />
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*"/>
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <platform name="winphone" />
+    <preference name="android-build-tool" value="gradle" /> 
+    <preference name="phonegap-version" value="cli-9.0.0" />
+</widget>
