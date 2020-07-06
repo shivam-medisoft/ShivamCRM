@@ -1,0 +1,16 @@
+{
+  "name": "ShivamCRM",
+  "version": "1.0.0",
+  "description": "Shivam CRM App",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam-medisoft/ShivamCRM.git"
+  },
+  "author": "Shivam Medisoft",
+  "license": "ISC",
+  "homepage": "https://shivammedisoft.com"
+}

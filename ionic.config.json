@@ -1,0 +1,7 @@
+{
+  "name": "ShivamCRM",
+  "type": "custom",
+  "integrations": {
+    "cordova": {}
+  }
+}
