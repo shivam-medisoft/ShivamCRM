@@ -1,6 +1,6 @@
 {
   "name": "ShivamCRM",
-  "version": "1.00",
+  "version": "1.0.0",
   "description": "Shivam CRM App",
   "main": "www/index.html",
   "scripts": {
