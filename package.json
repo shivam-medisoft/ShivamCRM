@@ -1,19 +1,26 @@
 {
-  "name": "ShivamCRM",
+  "name": "shivamcrm",
   "version": "1.0.0",
   "description": "Shivam CRM App",
   "main": "www/index.html",
+  "dependencies": {
+    "cordova-ios": "6.1.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shivam-medisoft/ShivamCRM.git"
   },
-   "dependencies": {
-   "cordova-ios": "6.1.0"
-  },
-  "author": "Shivam Medisoft",
+  "keywords": [
+    "crm"
+  ],
+  "author": "Shivam",
   "license": "ISC",
-  "homepage": "https://shivammedisoft.com"
+  "bugs": {
+    "url": "https://github.com/shivam-medisoft/ShivamCRM/issues"
+  },
+  "homepage": "https://github.com/shivam-medisoft/ShivamCRM#readme"
 }
