@@ -44,6 +44,7 @@
     <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
 </feature>-->
     <!-- Core plugins -->
+	<plugin name="cordova-plugin-camera" source="npm"/>
        <!--    <plugin spec="https://github.com/apache/cordova-plugin-camera.git" source="git" />-->
      <plugin name="cordova-plugin-camera" source="npm" >
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
@@ -52,6 +53,8 @@
     </plugin>
     <plugin name="cordova-plugin-datepicker" source="npm" />
     <plugin name="cordova-plugin-dialogs" source="npm"/>
+	
+	<plugin name="cordova-plugin-media-capture" source="npm"/>
     <!--    <plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />  -->
     <plugin name="cordova-plugin-media-capture" source="npm" >
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
@@ -94,19 +97,20 @@
     <plugin spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
     <plugin spec="https://github.com/Paldom/SpinnerDialog.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
--->
+
 	 <plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-device-motion" source="npm" />
 	<plugin name="cordova-plugin-device-orientation" source="npm" />
+-->
 	<plugin name="cordova-plugin-dialogs" source="npm" />
 	<plugin name="cordova-plugin-splashscreen" source="npm" />
     <plugin name="cordova-plugin-network-information" source="npm" />
-    <plugin name="NetworkInterfacePlugin" source="npm" />
-     <plugin name="FileOpener" source="npm" />
+    <plugin name="cordova-plugin-networkinterface" source="npm" />
+     <plugin name="cordova-plugin-fileviewer2" source="npm" />
+	 <plugin name="cordova-plugin-vha-fileopener2" source="npm" />
      <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="SpinnerDialog" source="npm" />
-    <plugin name="SpinnerDialog" source="npm" />
-	
+    <plugin name="cordova-plugin-spinnerdialog" source="npm" />
+   	
 <!--    for android-->
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
@@ -116,6 +120,13 @@
        <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name = "cordova-plugin-inappbrowser" source="npm" />
     <plugin name= "cordova-plugin-print-pdf" source="npm"/>
+	
+	<plugin name= "cordova-plugin-market" source="npm"/>
+	<plugin name= "cordova-plugin-app-version" source="npm"/>
+	<plugin name= "cordova-plugin-keyboard" source="npm"/>
+	<plugin name= "cordova-plugin-openfilenative" source="npm"/>
+	<plugin name= "cordova-plugin-statusbar" source="npm"/>
+	
   <!--   <plugin spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
     <plugin spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" source="git" />
 
