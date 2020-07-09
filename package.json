@@ -5,13 +5,65 @@
   "main": "www/index.html",
   "dependencies": {
     "cordova-ios": "5.1.1",
-    "my-cordova-plugin": "^5.4.0"
+    "my-cordova-plugin": "^5.4.0",
+    "@ionic-native/app-version": "^4.4.2",
+        "@ionic-native/camera": "4.4.2",
+        "@ionic-native/core": "^4.4.2",
+        "@ionic-native/crop": "^4.4.2",
+        "@ionic-native/date-picker": "^4.4.2",
+        "@ionic-native/device": "^4.4.2",
+        "@ionic-native/fcm": "^4.4.2",
+        "@ionic-native/file": "4.4.2",
+        "@ionic-native/image-resizer": "^4.4.2",
+        "@ionic-native/in-app-browser": "^4.4.2",
+        "@ionic-native/keyboard": "^4.4.2",
+        "@ionic-native/local-notifications": "^4.4.2",
+        "@ionic-native/native-storage": "^4.4.2",
+        "@ionic-native/network": "^4.4.2",
+        "@ionic-native/safari-view-controller": "^4.4.2",
+        "@ionic-native/secure-storage": "^4.4.2",
+        "@ionic-native/splash-screen": "4.4.2",
+        "@ionic-native/status-bar": "4.4.2",
+        "@ionic-native/toast": "^4.4.2",
+        "@ionic/storage": "^2.1.3",
+        "@types/async": "^2.0.45",
+        "async": "^2.6.0",
+        "async-es": "^2.6.0",
+        "cordova-android": "^6.4.0",
+        "cordova-ios": "^4.5.3",
+        "cordova-plugin-app-event": "^1.2.1",
+        "cordova-plugin-app-version": "^0.1.9",
+        "cordova-plugin-camera": "^2.4.1",
+        "cordova-plugin-console": "^1.0.7",
+        "cordova-plugin-crop": "~0.3.1",
+        "cordova-plugin-datepicker": "~0.9.3",
+        "cordova-plugin-device": "^1.1.4",
+        "cordova-plugin-fcm": "^2.1.2",
+        "cordova-plugin-file": "^4.3.3",
+        "cordova-plugin-image-resizer": "git+https://github.com/protonet/cordova-plugin-image-resizer.git",
+        "cordova-plugin-inappbrowser": "~1.7.1",
+        "cordova-plugin-nativestorage": "^2.2.2",
+        "cordova-plugin-network-information": "~1.3.3",
+        "cordova-plugin-safariviewcontroller": "^1.4.7",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-statusbar": "^2.2.2",
+        "cordova-plugin-whitelist": "^1.3.1",
+        "cordova-plugin-x-toast": "^2.6.0",
+        "de.appplant.cordova.plugin.local-notification": "^0.8.5"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "restore": "npm i --no-optional --no-package-lock",
-"restore:prod": "npm run restore -- --only=production"
+"restore:prod": "npm run restore -- --only=production",
+     "clean": "ionic-app-scripts clean",
+        "build": "ionic-app-scripts build",
+        "lint": "ionic-app-scripts lint",
+        "ionic:build": "ionic-app-scripts build",
+        "ionic:serve": "ionic-app-scripts serve",
+        "docs": "typedoc --out ./docs ./src --ignoreCompilerErrors",
+        "iosbuild": "ionic cordova build ios",
+        "iosrun": "ionic cordova run ios"
   },
   "repository": {
     "type": "git",
@@ -25,5 +77,30 @@
   "bugs": {
     "url": "https://github.com/shivam-medisoft/ShivamCRM/issues"
   },
-  "homepage": "https://github.com/shivam-medisoft/ShivamCRM#readme"
+  "homepage": "https://github.com/shivam-medisoft/ShivamCRM#readme",
+   "cordova": {
+        "plugins": {
+            "cordova-plugin-device": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-nativestorage": {},
+            "cordova-plugin-x-toast": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-camera": {},
+            "cordova-plugin-console": {},
+            "cordova-plugin-fcm": {},
+            "cordova-plugin-safariviewcontroller": {},
+            "cordova-plugin-crop": {},
+            "cordova-plugin-datepicker": {},
+            "cordova-plugin-inappbrowser": {},
+            "de.appplant.cordova.plugin.local-notification": {},
+            "cordova-plugin-app-version": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
 }
