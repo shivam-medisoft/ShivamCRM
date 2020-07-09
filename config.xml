@@ -60,7 +60,7 @@
 </edit-config>
 
 </platform>
-    
+   <!-- 
     <plugin spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
@@ -72,7 +72,7 @@
     <plugin spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
     <plugin spec="https://github.com/Paldom/SpinnerDialog.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
-
+-->
 <!--    for android-->
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
