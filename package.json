@@ -8,14 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1",
-     "clean": "ionic-app-scripts clean",
-        "build": "ionic-app-scripts build",
-        "lint": "ionic-app-scripts lint",
-        "ionic:build": "ionic-app-scripts build",
-        "ionic:serve": "ionic-app-scripts serve",
-        "iosbuild": "ionic cordova build ios",
-        "iosrun": "ionic cordova run ios"
+   
   },
   "repository": {
     "type": "git",
