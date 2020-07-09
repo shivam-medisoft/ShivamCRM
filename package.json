@@ -4,7 +4,8 @@
   "description": "Shivam CRM App",
   "main": "www/index.html",
   "dependencies": {
-    "cordova-ios": "5.1.1"
+    "cordova-ios": "5.1.1",
+    "my-cordova-plugin": "^5.4.0"
   },
   "devDependencies": {},
   "scripts": {
