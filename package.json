@@ -4,7 +4,7 @@
   "description": "Shivam CRM App",
   "main": "www/index.html",
   "dependencies": {
-    
+    "cordova-ios": "5.1.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/shivam-medisoft/ShivamCRM/issues"
   },
-  "homepage": "https://github.com/shivam-medisoft/ShivamCRM#readme"
+  "homepage": "https://github.com/shivam-medisoft/ShivamCRM#readme",
+  "cordova":{
+    "platforms": [
+            "ios"
+        ]
+  }
 }
