@@ -82,13 +82,13 @@
        <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name = "cordova-plugin-inappbrowser" source="npm" />
     <plugin name= "cordova-plugin-print-pdf" source="npm"/>
-     <plugin spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
+  <!--   <plugin spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
     <plugin spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" source="git" />
 
  <plugin spec="https://github.com/cjpearson/cordova-plugin-keyboard" source="git" />
   <plugin spec="https://github.com/andischerer/cordova-plugin-openfilenative.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
- 
+ -->
 
 <platform name="android">   
 	<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
