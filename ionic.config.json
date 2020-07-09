@@ -1,7 +1,8 @@
 {
   "name": "ShivamCRM",
-  "type": "custom",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "custom",
+  "id": "ab4be807"
 }

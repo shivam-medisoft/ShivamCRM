@@ -7,9 +7,7 @@
     "cordova-ios": "5.1.1"
   },
   "devDependencies": {},
-  "scripts": {
-   
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shivam-medisoft/ShivamCRM.git"
@@ -23,9 +21,9 @@
     "url": "https://github.com/shivam-medisoft/ShivamCRM/issues"
   },
   "homepage": "https://github.com/shivam-medisoft/ShivamCRM#readme",
-  "cordova":{
+  "cordova": {
     "platforms": [
-            "ios"
-        ]
+      "ios"
+    ]
   }
 }
