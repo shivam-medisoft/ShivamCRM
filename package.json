@@ -4,8 +4,6 @@
   "description": "Shivam CRM App",
   "main": "www/index.html",
   "dependencies": {
-    "cordova-ios": "5.1.1",
-    "my-cordova-plugin": "5.1.1",
     "@ionic-native/app-version": "^4.4.2",
         "@ionic-native/camera": "4.4.2",
         "@ionic-native/core": "^4.4.2",
