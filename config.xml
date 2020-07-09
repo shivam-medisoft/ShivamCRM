@@ -77,7 +77,6 @@
 <!--    for android-->
     <plugin name="cordova-plugin-file" source="npm"  spec="4.1.0" />
     <plugin name="cordova-plugin-file-transfer" spec="1.6.1" />
-<plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
   <plugin name="cordova-plugin-phonedialer" source="npm" version="0.3.1"/>
     <plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.4.0" />
     <plugin name="cordova-plugin-fileopener" source="npm" />
