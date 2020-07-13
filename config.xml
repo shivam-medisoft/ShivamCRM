@@ -111,7 +111,9 @@
 	 <plugin name="cordova-plugin-vha-fileopener2" source="npm" />
      <plugin name="cordova-plugin-datepicker" source="npm" />
     <plugin name="cordova-plugin-spinnerdialog" source="npm" />
-   	
+	
+	<plugin name="cordova-plugin-httpd-cors" source="npm" />
+   	<plugin name="cordova-plugin-cors" source="npm" />
 <!--    for android-->
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
