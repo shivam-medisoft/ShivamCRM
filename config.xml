@@ -257,4 +257,5 @@
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>
 	 <engine name="ios" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
 </widget>
