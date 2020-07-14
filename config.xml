@@ -62,8 +62,6 @@
     <param name="ios-package" value="CDVWKWebViewEngine" />
 </feature>
 <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-<preference name="AllowBackForwardNavigationGestures" value="true" />
-<preference name="Allow3DTouchLinkPreview" value="false" />
 	
 	
 	<plugin name="cordova-plugin-media-capture" source="npm"/>
@@ -124,7 +122,7 @@
     <plugin name="cordova-plugin-spinnerdialog" source="npm" />
 	
 	 <plugin name="cordova-plugin-httpd-cors" source="npm" /> 
-   	<!--<plugin name="cordova-plugin-cors" source="npm" />-->
+   	<plugin name="cordova-plugin-cors" source="npm" />
 <!--    for android-->
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
