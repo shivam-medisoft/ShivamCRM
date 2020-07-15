@@ -54,6 +54,8 @@
     <plugin name="cordova-plugin-datepicker" source="npm" />
     <plugin name="cordova-plugin-dialogs" source="npm"/>
 
+	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
+<plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
 <feature name="CDVWKWebViewEngine">
     <param name="ios-package" value="CDVWKWebViewEngine" />
 </feature>
