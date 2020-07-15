@@ -57,9 +57,7 @@
 	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
 <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
 
-	
-	
-	<plugin name="cordova-plugin-media-capture" source="npm"/>
+<plugin name="cordova-plugin-media-capture" source="npm"/>
     <!--    <plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />  -->
     <plugin name="cordova-plugin-media-capture" source="npm" >
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
