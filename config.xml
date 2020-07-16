@@ -55,10 +55,10 @@
 
 	
 <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
-<feature name="CDVWKWebViewEngine">
+ <!-- <feature name="CDVWKWebViewEngine">
     <param name="ios-package" value="CDVWKWebViewEngine" />
 </feature>
-<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />-->
 <plugin name="cordova-plugin-media-capture" source="npm"/>
     <!--    <plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />  -->
     <plugin name="cordova-plugin-media-capture" source="npm" >
