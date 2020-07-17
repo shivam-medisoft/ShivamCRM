@@ -128,8 +128,8 @@
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>
 		
- <!-- <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
-  <feature name="CDVWKWebViewEngine">
+  <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
+  <!--<feature name="CDVWKWebViewEngine">
     <param name="ios-package" value="CDVWKWebViewEngine" />
 </feature>-->
 <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
