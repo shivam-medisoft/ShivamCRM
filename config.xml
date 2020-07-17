@@ -129,9 +129,10 @@
     </plugin>
 		
   <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
-  <!--<feature name="CDVWKWebViewEngine">
+	 <plugin name="cordova-plugin-wkwebview-ionic-xhr"  source="npm" /> 
+  <feature name="CDVWKWebViewEngine">
     <param name="ios-package" value="CDVWKWebViewEngine" />
-</feature>-->
+</feature>
 <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 	
 	
