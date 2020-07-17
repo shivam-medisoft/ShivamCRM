@@ -85,6 +85,7 @@ function getmenu(th, type, newbuild) {
 }
 $(document).ready(function () {
     debugger;
+     alert("its in dashboardmenu js");
     localStorage.frmlogout = "0";
     localStorage.neosoftmenuflg = "0"
     localStorage.removeItem("neosoftmenuclass");
@@ -172,6 +173,7 @@ $(document).ready(function () {
 //                            "</div>  </div> </div> ";
 
                 $('#divmenu').html(row);
+                alert(row);
                 $('#mydiv').hide();
             }
         },
