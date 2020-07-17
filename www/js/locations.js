@@ -225,6 +225,7 @@ function getlocid(locid, locnm) {
 //                            "</div>  </div> </div> ";
 
                                 $('#divmenu').html(row);
+                                alert(row);
                                 $('#mydiv').hide();
                             }
                         },
