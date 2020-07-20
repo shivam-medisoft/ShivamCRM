@@ -149,6 +149,7 @@
 	
 	
 <!--    for android-->
+	<plugin name="cordova-plugin-push-notification" source="npm"  />
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
   <plugin name="cordova-plugin-phonedialer" source="npm" />
