@@ -38,7 +38,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
 	<preference name="NativeXHRLogging" value="true">
- <preference name="AllowUntrustedCerts"  value="true" />
+ <preference name="AllowUntrustedCerts"  value="false" />
  <preference name="InterceptRemoteRequests" value="all" />
  <preference name="allowFileAccessFromFileURLs" value="true" />
  <preference name="allowUniversalAccessFromFileURLs" value="true" />
