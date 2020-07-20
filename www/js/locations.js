@@ -115,7 +115,7 @@ $(document).ready(function () {
 //    
 });
 function getlocid(locid, locnm) {
-    alert("loc clicked");
+   
     localStorage.locid = locid;
     localStorage.locnm = locnm;
     // location.href = "subdepts.html";
@@ -212,7 +212,7 @@ function getlocid(locid, locnm) {
                                     // getmenu(responseJson[0]["WEBFORMID"], responseJson[0]["TYPE"], localStorage.newbuild);
                                 }
                             } else {
-                                alert("open dash html");
+                             
                                 location.href = "dashboardmenu.html";
 
 //                 row = row + " <div class='col-md-4 col-sm-6 col-xs-12'> " +
@@ -225,7 +225,7 @@ function getlocid(locid, locnm) {
 //                            "</div>  </div> </div> ";
 
                                 $('#divmenu').html(row);
-                                alert(row);
+                              
                                 $('#mydiv').hide();
                             }
                         },
@@ -241,7 +241,7 @@ function getlocid(locid, locnm) {
                 }
                 else
                 {
-                     alert("loc clicked else");
+                     
                     location.href = "subdepts.html";
                     var path = localStorage.ipadrs + "/dashboardmenu?userid=" + localStorage.userid + "&mobnewflg=1&usernm=" + localStorage.usernm + "&locid=" + localStorage.locid + "&locnm=" + localStorage.locnm;
                     var row = "";
@@ -313,7 +313,7 @@ function getlocid(locid, locnm) {
 //                            "<span class='info-box-text'></span>" +
 //                            "<span class='info-box-number'><br><a href='backspace.html'>back</a></span>" +
 //                            "</div>  </div> </div> ";
- alert("loc clicked else assign data");
+ 
                                 $('#divmenu').html(row);
                                 $('#mydiv').hide();
                             }
