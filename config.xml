@@ -139,11 +139,7 @@
 		
 	
 
-	<feature name="CDVWKWebViewEngine">
-  <param name="ios-package" value="CDVWKWebViewEngine" />
-		    <param name="onload" value="true" />
-</feature>
-<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+	
 	
 	<!--  <plugin name="cordova-plugin-wkwebview-ionic-xhr"  source="npm" /> 
    <feature name="CDVWKWebViewEngine">
