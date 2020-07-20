@@ -37,6 +37,11 @@
 	  <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+	<preference name="NativeXHRLogging" value="true">
+ <preference name="AllowUntrustedCerts"  value="true" />
+ <preference name="InterceptRemoteRequests" value="all" />
+ <preference name="allowFileAccessFromFileURLs" value="true" />
+ <preference name="allowUniversalAccessFromFileURLs" value="true" />
      <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
     <!-- Plugins -->
