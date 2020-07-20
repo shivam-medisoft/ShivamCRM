@@ -38,7 +38,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
 	<preference name="NativeXHRLogging" value="true">
- <preference name="AllowUntrustedCerts"  value="false" />
+ <preference name="AllowUntrustedCerts"  value="true" />
  <preference name="InterceptRemoteRequests" value="all" />
  <preference name="allowFileAccessFromFileURLs" value="true" />
  <preference name="allowUniversalAccessFromFileURLs" value="true" />
@@ -137,7 +137,7 @@
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>  -->
 		
-<plugin name="cordova-plugin-ios-xhr"  source="npm" /> 
+<plugin name="@globules-io/cordova-plugin-ios-xhr"  source="npm" /> 
 	<!--  <plugin name="cordova-plugin-wkwebview-ionic-xhr"  source="npm" /> 
    <feature name="CDVWKWebViewEngine">
     <param name="ios-package" value="CDVWKWebViewEngine" />
