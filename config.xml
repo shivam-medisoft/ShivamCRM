@@ -132,7 +132,7 @@
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>  -->
 		
-<plugin name="cordova-plugin-wkwebviewxhrfix"  source="npm" /> 
+<plugin name="cordova-plugin-ios-xhr"  source="npm" /> 
 	<!--  <plugin name="cordova-plugin-wkwebview-ionic-xhr"  source="npm" /> 
    <feature name="CDVWKWebViewEngine">
     <param name="ios-package" value="CDVWKWebViewEngine" />
