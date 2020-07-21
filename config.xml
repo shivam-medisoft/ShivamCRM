@@ -148,7 +148,8 @@
 <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" /> -->
 	
 	
-<!--    for android-->
+<!--    for android--> 
+	<plugin name="cordova-plugin-badge" source="npm"  />
 	<plugin name="phonegap-plugin-push" source="npm"  />
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
