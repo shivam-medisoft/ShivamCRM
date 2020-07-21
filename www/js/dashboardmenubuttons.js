@@ -295,7 +295,7 @@ $(document).ready(function () {
  try{
                    if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
-                        $('.iosstatusbar').css('display','block');
+                        $('.iosstatusbar').css('display','none');
                     }
     }catch(err){}
 });
