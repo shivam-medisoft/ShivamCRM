@@ -10,7 +10,7 @@ function onDeviceReadyReg() {
      try{
                     if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
-                        $('.iosstatusbar').css('display','block');
+                        $('.iosstatusbar').css('display','none');
                         $('.setfootbtn').css('width','auto');
                          $('.subdcont').css('margin-top','65px');
                         
