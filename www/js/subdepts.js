@@ -10,9 +10,14 @@ function onDeviceReadyReg() {
      try{
                     if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
-                        $('.iosstatusbar').css('display','none');
+			       if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
+                        $('.iosstatusbar').css('display','block');
                         $('.setfootbtn').css('width','auto');
                          $('.subdcont').css('margin-top','65px');
+			   }
                         
                     }
     }catch(err){}
