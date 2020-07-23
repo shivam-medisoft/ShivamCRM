@@ -100,10 +100,15 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 try{
                    if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
+			     if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
                         $('.iosstatusbar').css('display','block');
                         $('.main-header').css('height','70px');
                         $('.content-wrapper').css('padding-top','70px');
                          $('.setfootbtn').css('width','auto');
+			   }
                     }
     }catch(err){}
     };
