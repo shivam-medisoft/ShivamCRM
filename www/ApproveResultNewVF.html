@@ -74,10 +74,15 @@ $(document).ready(function () {
                 $(document).ready(function () {
                  try{
                    if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
+			   if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
                         $('.iosstatusbar').css('display','block');
                         $('.arnvhead').css('height','70px');
                          $('.lblhed2').css('top','20px');
                          $('.arnvcont').css('top','70px');
+			   }
                     }
     }catch(err){}
                 });
