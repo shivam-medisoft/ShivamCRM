@@ -36,9 +36,14 @@ $(document).ready(function () {
             try{
                     if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
-                        $('.iosstatusbar').css('display','none');
+                         if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
+                        $('.iosstatusbar').css('display','block');
                         $('.setfootbtn').css('width','auto');
                         $('.loccont').css('margin-top','65px');
+               }
                     }
     }catch(err){}
             try {
