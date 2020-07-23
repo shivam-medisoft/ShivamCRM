@@ -219,9 +219,14 @@ margin-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
                     
                      if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
+			       if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
                         $('.iosstatusbar').css('display','block');
                         $('#displayforms').css('top','45px');
                          $('.main-header').css('height','45px');
+			   }
                     }
                 }catch(err){}
                     try{
