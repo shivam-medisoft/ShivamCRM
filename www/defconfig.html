@@ -320,9 +320,14 @@ $(document).ready(function () {
 try{
                      if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
+			             if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
                         $('.iosstatusbar').css('display','block');
                          $('.container-fluid').css('padding-top','60px');
                          $('.setfootbtn').css('width','auto');
+			   }
                     }
     }catch(err){}
     };
