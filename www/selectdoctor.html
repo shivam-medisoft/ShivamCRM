@@ -435,10 +435,15 @@ loadjsfile();
 try{
                    if(localStorage.devicetype.toLowerCase()==='iphone' || localStorage.devicetype.toLowerCase()==='ipad'){
 //                         confirm(localStorage.devicetype); 
+                         if(localStorage.appname ==='dashboard'){
+				    $('.iosstatusbar').css('display','none');
+			   }
+			   else{
                         $('.iosstatusbar').css('display','block');
                         $('.dmmanav').css('top','20px');
                         $('.searchdoctor').css('top','70px');
                         $('.body-content').css('top','115px');
+               }
                     }
     }catch(err){}
     };
