@@ -107,7 +107,7 @@
 <!--    for android--> 
 	<plugin name="cordova-plugin-badge" source="npm"  />
 	<plugin name="phonegap-plugin-push" source="npm" />
-	 <plugin name="phonegap-plugin-push" spec="~1.10.0" />
+	 <plugin name="phonegap-plugin-push" spec="~1.10.0" >
        <variable name="SENDER_ID" value="940836237549" />
     </plugin>
     <plugin name="cordova-plugin-file" source="npm"  />
