@@ -150,7 +150,9 @@
 	
 <!--    for android--> 
 	<plugin name="cordova-plugin-badge" source="npm"  />
-	<plugin name="phonegap-plugin-push" source="npm"  />
+	 <plugin name="phonegap-plugin-push" spec="~1.10.0">
+        <variable name="SENDER_ID" value="1:940836237549:ios:03ef5ae318ddd07ee39ce4" />
+    </plugin>
     <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer"/>
   <plugin name="cordova-plugin-phonedialer" source="npm" />
