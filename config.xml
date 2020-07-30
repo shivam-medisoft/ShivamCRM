@@ -141,6 +141,7 @@
   
 	</platform>
     <platform name="ios">
+	    
     <!--ios spalsh -->
     <splash src="resources/CRMsplash/ios/320by480.png"  width="320" height="480" />
     <splash src="resources/CRMsplash/ios/480by320.png"  width="480" height="320" />
@@ -231,6 +232,9 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+	    <preference name="WKWebViewOnly" value="true" /> 
+	    <feature name="CDVWKWebViewEngine"> <param name="ios-package" value="CDVWKWebViewEngine" /> </feature> 
+	    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     </platform>
     <platform name="winphone" />
     <preference name="android-build-tool" value="gradle" /> 
