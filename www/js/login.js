@@ -232,6 +232,7 @@ function subdepartments(locationid) {
             if (error.statusText == "OK") {
                 alert(error.responseText);
             } else {
+                alert("235 line");
                 location.href = '404.html'
             }
             $('#mydiv').hide();
@@ -392,6 +393,7 @@ function location1(userid) {
                                             if (error.statusText == "OK") {
                                                 alert(error.responseText);
                                             } else {
+                                                alert("396 line");
                                                 location.href = '404.html'
                                             }
                                         }
@@ -480,6 +482,7 @@ function location1(userid) {
                                             if (error.statusText == "OK") {
                                                 alert(error.responseText);
                                             } else {
+                                                alert("485 line");
                                                 location.href = '404.html'
                                             }
                                         }
@@ -533,6 +536,7 @@ function location1(userid) {
                             if (error.statusText == "OK") {
                                 alert(error.responseText);
                             } else {
+                                alert("539 line");
                                 location.href = '404.html'
                             }
                             $('#mydiv').hide();
@@ -624,6 +628,7 @@ function location1(userid) {
                 alert(error.responseText);
             } else {
                 $('#mydiv').hide();
+                alert("631 line");
                 location.href = '404.html'
             }
         }
@@ -1153,6 +1158,7 @@ function callWithHttp(){
                 if (error.statusText == "OK") {
                     alert(error.responseText);
                 } else {
+                    alert("1161 line");
                     location.href = '404.html';
                 }
             }
@@ -1600,6 +1606,7 @@ function loadpage(pageid, rights, label, thisid) {
                 if (error.statusText === "OK") {
                     alert(error.responseText);
                 } else {
+                    alert("1609 line");
                     location.href = '404.html'
                 }
             }
