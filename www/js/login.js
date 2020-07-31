@@ -1027,6 +1027,7 @@ function callWithHttp(){
             type: "GET",
             dataType: "json",
             success: function (responseJson) {
+                alert("1020 line with success block");
                 if (responseJson.length > 0) {
 //		 
                     try {
@@ -1158,7 +1159,7 @@ function callWithHttp(){
                 if (error.statusText == "OK") {
                     alert(error.responseText);
                 } else {
-                    alert("1161 line");
+                    alert("1161 line" + error);
                     location.href = '404.html';
                 }
             }
