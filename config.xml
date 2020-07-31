@@ -38,16 +38,16 @@
      <preference name="SplashMaintainAspectRatio" value="true" />
 	  <preference name="webviewbounce" value="true" />
     <preference name="UIWebViewBounce" value="true" />
-    <preference name="DisallowOverscroll" value="true" />-->
+    <preference name="DisallowOverscroll" value="true" />
 	
 	<preference name="scheme" value="app" />
-<preference name="hostname" value="localhost" />
+<preference name="hostname" value="localhost" />-->
 
 	  <plugin name="cordova-plugin-wkwebviewxhrfix" />
 	
-     <plugin name="cordova.plugins.diagnostic" />
+    <!-- <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
-    <!-- Plugins -->
+     Plugins -->
     
 
     <!-- Core plugins -->
