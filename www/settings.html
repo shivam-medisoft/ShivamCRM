@@ -203,6 +203,10 @@ function statusbar() {
                 }catch(err){}
     };
 	   loadappjsfile("theme.js");
+	   function adduserlogin(){
+               localStorage.settings = '1';
+            location.href = 'index.html?show=1';
+           }
 //           $("input[type=color]:disabled").spectrum();
         </script>
         <style>
@@ -234,7 +238,7 @@ function statusbar() {
                 <span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text"></span>
-                  <span class="info-box-number"><br><a href='clear.html'>Add User</a></span>
+                   <span class="info-box-number"><br><a onclick="adduserlogin();">Add User</a></span>
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
             </div><!-- /.col -->
