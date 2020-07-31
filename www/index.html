@@ -12,6 +12,7 @@ and open the template in the editor.
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
            <script type="text/javascript" src="js/cordova.js"></script>
 	<script type="text/javascript" src="cordova.js"></script>
      <script type="text/javascript" src="phonegap.js"></script>
@@ -299,8 +300,12 @@ and open the template in the editor.
                 }
                 localStorage.appname = 'dashboard';
                 if(location.href.indexOf("show=1") == -1){
+			 event.stopPropagation();
+    event.preventDefault();
 		location.href = 'index_1.html?ab=1&isFromLogin=1';
             }else{
+		     event.stopPropagation();
+    event.preventDefault();
                 location.href = 'index_1.html';
             }
 //                if (localStorage.appurl !== undefined) {
@@ -325,6 +330,8 @@ and open the template in the editor.
                 if (type === "Patient") {
                     location.href = 'PatientLoginSecondScreen.html'
                 } else {
+			 event.stopPropagation();
+    event.preventDefault();
                     location.href = 'index_1.html'
                 }
             }
