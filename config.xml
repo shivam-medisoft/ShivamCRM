@@ -83,8 +83,10 @@
     </edit-config>
     <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
         <string>need location access to find things nearby</string>
+    </edit-config> 
+	    <edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need location access to find things nearby</string>
     </edit-config>
-	    
 
 <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
     <string>need photo library access to save pictures there</string>
@@ -129,7 +131,7 @@
 	<plugin name= "cordova-plugin-keyboard" source="npm"/>
 	<plugin name= "cordova-plugin-openfilenative" source="npm"/>
 	<plugin name= "cordova-plugin-statusbar" source="npm"/>
-
+<plugin name= "cordova-plugin-migrate-localstorage" source="npm"/>
 
 <platform name="android">   
 	<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
