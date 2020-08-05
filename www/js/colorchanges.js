@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 function adduserlogin(){
-		    event.stopPropagation();
-    event.preventDefault();
+	//	    event.stopPropagation();
+  //  event.preventDefault();
                localStorage.settings = '1';
             location.href = 'index.html?show=1';
            }
