@@ -3,6 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+function adduserlogin(){
+		    event.stopPropagation();
+    event.preventDefault();
+               localStorage.settings = '1';
+            location.href = 'index.html?show=1';
+           }
 
 var style_cookie_name = "style" ;
 var style_cookie_duration = 30 ;
