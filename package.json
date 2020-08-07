@@ -5,8 +5,7 @@
   "description": "Shivam CRM App",
   "dependencies": {
     "cordova-ios":"^5.1.1",
-    "cordova-plugin-ionic-webview":"^5.0.0",
-    "@ionic-nativa/ionic-webview":"^5.27.0"
+    "cordova-plugin-ionic-webview":"^5.0.0"
   },
   "devDependencies": {},
   "scripts": {},
