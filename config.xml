@@ -38,8 +38,8 @@
 	  <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
-	<!--<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
-  <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
+	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
+<!--  <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
 	 <preference name="scheme" value="app" />
 <preference name="hostname" value="localhost" />
 
@@ -256,8 +256,5 @@
 	  <!--  <preference name="AllowBackForwardNavigationGestures" value="true" />
 	    <preference name="Allow3DTouchLinkPreview" value="false" />-->
     </platform>
-    <platform name="winphone" />
-    <preference name="android-build-tool" value="gradle" /> 
-
-	 <engine name="ios" />
+  <engine name="ios" />
 </widget>
