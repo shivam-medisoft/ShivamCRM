@@ -16,11 +16,11 @@
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
+    <preference name="stay-in-webview" value="true" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
      <preference name="StatusBarBackgroundColor" value="#31708F" />
     <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="true" />
+    <preference name="exit-on-suspend" value="false" />
 	<preference name="fullscreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="AutoHideSplashScreen" value="true" />
@@ -39,8 +39,10 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
 	
+	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
+	<!--
 	<plugin name="cordova-plugin-ionic-webview"  source="npm" />
-	<!--<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
+	
   <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
 	 <preference name="scheme" value="app" />
 <preference name="hostname" value="localhost" />
