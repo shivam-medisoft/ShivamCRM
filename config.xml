@@ -139,11 +139,12 @@
 	<plugin name= "cordova-plugin-openfilenative" source="npm"/>
 	<plugin name= "cordova-plugin-statusbar" source="npm"/>
 	
-<plugin name= "cordova-plugin-migrate-localstorage" source="npm"/>
+
 	
 	
 <plugin name= "cordova-plugin-ionic-webview-openblank" source="npm"/> 
 	<!-- 
+<plugin name= "cordova-plugin-migrate-localstorage" source="npm"/>
 <plugin name= "cordova-plugin-ionic-migrate-ios-storage" source="npm"/>
 <plugin name= "cordova-plugin-ionic-webview-file-xhr" source="npm"/>
  <plugin name= "cordova-plugin-cors" source="npm"/>
