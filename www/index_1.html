@@ -40,8 +40,8 @@ and open the template in the editor.
         <link rel="alternate stylesheet" type="text/css" title="purple" href="themeCSS/stylesPurple.css?version=1">
         <link rel="alternate stylesheet" type="text/css" title="red" href="themeCSS/stylesRed.css?version=1">
         <link rel="alternate stylesheet" type="text/css" title="skyblue" href="themeCSS/stylesSkyblue.css?version=1">
-        <link rel="alternate stylesheet" type="text/css" title="yellownew" href="themeCSS/stylesYellow.css?version=1">
-       <script type="text/javascript" src="js/dashboardmenubuttons.js?version=47"></script>-->
+        <link rel="alternate stylesheet" type="text/css" title="yellownew" href="themeCSS/stylesYellow.css?version=1">-->
+       <script type="text/javascript" src="js/dashboardmenubuttons.js?version=47"></script>
 	<script>
             
            var cssFilesArr = ["styles.css", "stylesGreentheme.css",  
@@ -110,20 +110,25 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
       var fromlogin = 0;
       
       if(location.href.indexOf("isFromLogin") != -1){
-          //confirm("inside");
+          alert("inside");
           fromlogin = 1;
       }
       if(fromlogin == 1){
+	      alert("fromlogin 1");
        var inputVal=$("input.inputclass").val().trim();
        //confirm("here");
        if ("iphospname" in localStorage) {
+	       alert("iphospname in localStorage");
            if(localStorage.iphospname == "@@@"){
+		   alert("first");
                $('#divformid').show();
            }
        }else{
+	       alert("second");
            $('#divformid').show();
        }
    }else{
+	   alert("third");
        $('#divformid').show();
    }
    if(inputVal!==''){
