@@ -3,7 +3,7 @@
         xmlns:cdv="http://cordova.apache.org/ns/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.shivam.crm" 
-        version="1.0.4">
+        version="1.0.5">
     <name>ShivamCRM</name>
     <description>
         Shivam Medisoft CRM Using Shivam FrameWork.
@@ -41,15 +41,15 @@
 	
 	
 	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
+	<plugin name="cordova-plugin-wkwebviewxhrfix" />
+	<plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" />
 	
 <!-- <plugin name="cordova-plugin-httpd-cors"  source="npm" /> 
- <plugin name="cordova-plugin-ionic-webview"  source="npm" />-->
-	
-  <plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" /> 
-	 <preference name="scheme" value="app" />
+ <plugin name="cordova-plugin-ionic-webview"  source="npm" />
+ <preference name="scheme" value="app" />
 <preference name="hostname" value="localhost" />
-
-	  <plugin name="cordova-plugin-wkwebviewxhrfix" />
+-->
+	  
 	
     <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
