@@ -113,6 +113,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
           alert("inside");
           fromlogin = 1;
       }
+	  try{
       if(fromlogin == 1){
 	      alert("fromlogin 1");
        var inputVal=$("input.inputclass").val().trim();
@@ -131,6 +132,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 	   alert("third");
        $('#divformid').show();
    }
+	  }catch(err){alert("error is" + err);}
    if(inputVal!==''){
         $('.lblnm').addClass('active');
 //        $('.lblnm').css('position','relative');
