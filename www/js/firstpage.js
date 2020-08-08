@@ -66,7 +66,7 @@ function checkdefaultconfig()
 {
     debugger;
 alert("in firstpage.js checkdefaultconfig");
-    var db = window.openDatabase("Database", "1.0", "SHIVAMDB", 200000);
+    var db = window.sqlitePlugin.openDatabase("Database", "1.0", "SHIVAMDB", 500000);
     db.transaction(dqueryDBi, derrorCBi);
 
 }
