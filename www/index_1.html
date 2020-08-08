@@ -110,28 +110,28 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
       var fromlogin = 0;
       
       if(location.href.indexOf("isFromLogin") != -1){
-          alert("inside");
+         // alert("inside");
           fromlogin = 1;
       }
 	  try{
       if(fromlogin == 1){
-	      alert("fromlogin 1");
+	    //  alert("fromlogin 1");
        var inputVal=$("input.inputclass").val().trim();
        //confirm("here");
        if ("iphospname" in localStorage) {
-	       alert("iphospname in localStorage");
+	    //   alert("iphospname in localStorage");
            if(localStorage.iphospname == "@@@"){
-		   alert("first");
+		//   alert("first");
                $('#divformid').show();
            }
        }else{
-	       alert("second");
+	      // alert("second");
            $('#divformid').show();
        }
    }else{
-	   alert("third");
-	   $("#divformid").addClass("divformid");
-       $('#divformid').css("display","block");
+	 //  alert("third");
+	  // $("#divformid").addClass("divformid");
+       $('#divformid').show();
    }
 	  }catch(err){alert("error is" + err);}
    if(inputVal!==''){
