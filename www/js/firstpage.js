@@ -16,6 +16,7 @@ try{
                 });
 }catch(err){}
     if (localStorage.settings === '1') {
+	    alert("localStorage.settings 1");
         checkdefaultconfig();
 //        $("input[name=ipaddress]").val(localStorage.ipaddres);
 //        $("input[name=portnumber]").val(localStorage.portno);
