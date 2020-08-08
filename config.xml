@@ -41,6 +41,7 @@
 	
 	
 	<plugin name="cordova-sqlite-storage"  source="npm" /> 
+	<plugin name="cordova-sqlite-plugin"  source="npm" /> 
 	
 	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
 	<plugin name="cordova-plugin-wkwebviewxhrfix" />
