@@ -130,6 +130,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
        }
    }else{
 	   alert("third");
+	   $("#divformid").addClass("divformid");
        $('#divformid').show();
    }
 	  }catch(err){alert("error is" + err);}
@@ -413,6 +414,11 @@ color:#000;
             #btnConnect{border-radius: 25px;}
 	    #divformid{z-index:999999999;}
 	    .login-page{z-index:9999;}
+	    .divformid{
+	    position: fixed;
+    width: 100%;
+    z-index: 999999;
+	    }
         </style>
     </head>
     <body class="login-page" onload="inputload();">
