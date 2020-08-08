@@ -64,9 +64,8 @@ try{
 function checkdefaultconfig()
 {
     debugger;
-
-    debugger;
-    var db = window.sqlitePlugin.openDatabase("Database", "1.0", "SHIVAMDB", 200000);
+alert("in firstpage.js checkdefaultconfig");
+    var db = window.openDatabase("Database", "1.0", "SHIVAMDB", 200000);
     db.transaction(dqueryDBi, derrorCBi);
 
 }
@@ -75,7 +74,7 @@ function dqueryDBi(tx)
 {
 
     debugger;
-
+alert("in firstpage.js dqueryDBi");
     tx.executeSql('CREATE TABLE IF NOT EXISTS defaultConfig(pid INTEGER PRIMARY KEY AUTOINCREMENT,dhospname TEXT,dipadd TEXT,dport TEXT,dhostnm TEXT ) ');
     tx.executeSql('SELECT distinct dhospname,dipadd,dport,dhostnm FROM defaultConfig', [], dquerrySuccessi, derrorCBi);
 }
@@ -86,10 +85,12 @@ function derrorCBi(err)
 }
 function  dquerrySuccessi(tx, results) {
     debugger;
+	alert("in firstpage.js dquerrySuccessi");
     var len = 0;
     var len = results.rows.length;
     var hospnm, ipadd, port, host = "";
     if (len > 0) {
+	    alert("in firstpage.js dquerrySuccessi len > 0");
 //        $('.lblnm').css('position','absolute');
 //        $('.lblnm').css('padding-top','10px');
         hospnm = results.rows.item(0).dhospname;
@@ -106,11 +107,13 @@ function  dquerrySuccessi(tx, results) {
           if($('.form-control').val()===""){
         $('.lblnm').removeClass('active');
     }
-    else{ $('.lblnm').addClass('active');}
+    else{ $('.lblnm').addClass('active');
+	alert("in firstpage.js dquerrySuccessi '.form-control').val()==="" else part");
+	}
         return;
 
     } else {
- 
+ alert("in firstpage.js dquerrySuccessi len>=0 else part");
 //        $('.lblnm').css('position','relative');
 //        $('.lblnm').css('padding-top','0px');
         $("input[name=ipaddress]").val(localStorage.ipaddres);
@@ -166,6 +169,7 @@ function  dquerrySuccessi(tx, results) {
 	}
 	  });
     }
+	 alert("in firstpage.js dquerrySuccessi end");
 }
  
  
