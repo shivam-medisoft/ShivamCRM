@@ -17,9 +17,9 @@ try{
 }catch(err){}
 	    
     if (localStorage.settings === '1') {
-	   alert("localStorage.settings 1");
+	  // alert("localStorage.settings 1");
         checkdefaultconfig();
-	     alert("localStorage.settings 1 after function");
+	    // alert("localStorage.settings 1 after function");
 //        $("input[name=ipaddress]").val(localStorage.ipaddres);
 //        $("input[name=portnumber]").val(localStorage.portno);
 //        $("input[name=hostname]").val(localStorage.hostname);
@@ -68,11 +68,11 @@ function checkdefaultconfig()
 {
     debugger;
 	//try{
-alert("in firstpage.js checkdefaultconfig start");
-    var db = window.openDatabase("Database.db", "1.1", "SHIVAMDB", 1);
-	alert("in firstpage.js checkdefaultconfig after var db");
+//alert("in firstpage.js checkdefaultconfig start");
+    var db = window.openDatabase("Database", "1.1", "SHIVAMDB", 20000);
+	//alert("in firstpage.js checkdefaultconfig after var db");
     db.transaction(dqueryDBi, derrorCBi);
-alert("in firstpage.js checkdefaultconfig end");
+//alert("in firstpage.js checkdefaultconfig end");
 	//}catch(err){alert("err is : " + err};
 }
 
