@@ -1,6 +1,6 @@
 {
   "name": "shivamcrm",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.html",
   "description": "Shivam CRM App",
   "dependencies": {
