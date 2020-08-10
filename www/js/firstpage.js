@@ -15,9 +15,11 @@ try{
                     localStorage.themecolor = responsetext;
                 });
 }catch(err){}
+	    
     if (localStorage.settings === '1') {
-	   // alert("localStorage.settings 1");
+	   alert("localStorage.settings 1");
         checkdefaultconfig();
+	     alert("localStorage.settings 1 after function");
 //        $("input[name=ipaddress]").val(localStorage.ipaddres);
 //        $("input[name=portnumber]").val(localStorage.portno);
 //        $("input[name=hostname]").val(localStorage.hostname);
