@@ -69,7 +69,7 @@ function checkdefaultconfig()
     debugger;
 	//try{
 alert("in firstpage.js checkdefaultconfig start");
-    var db = window.openDatabase("Database", "1.1", "SHIVAMDB", 20000);
+    var db = window.openDatabase("Database.db", "1.1", "SHIVAMDB", 1);
 	alert("in firstpage.js checkdefaultconfig after var db");
     db.transaction(dqueryDBi, derrorCBi);
 alert("in firstpage.js checkdefaultconfig end");
