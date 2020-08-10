@@ -67,12 +67,12 @@ try{
 function checkdefaultconfig()
 {
     debugger;
-	try{
+	//try{
 alert("in firstpage.js checkdefaultconfig start");
     var db = window.sqlitePlugin.openDatabase("crmdb.db", "1.0", "SHIVAMDB", -1);
     db.transaction(dqueryDBi, derrorCBi);
 alert("in firstpage.js checkdefaultconfig end");
-	}catch(err){alert("err is : " + err};
+	//}catch(err){alert("err is : " + err};
 }
 
 function dqueryDBi(tx)
