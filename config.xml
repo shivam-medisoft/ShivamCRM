@@ -39,6 +39,8 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
 	
+	<plugin name="cordova-sqlite-storage"  source="npm" /> 
+	
 	<!--<plugin name="cordova-sqlite-legacy-build-support"  source="npm" /> 
 	<plugin name="cordova-sqlite-storage"  source="npm" /> 
 	 <plugin name="cordova-sqlite-legacy-build-support"  source="npm" /> -->
