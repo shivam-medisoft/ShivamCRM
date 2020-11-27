@@ -38,9 +38,9 @@
 	 <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
-	<!-- 
-	<preference name="deployment-target" value="8.0" />
 	
+	<preference name="deployment-target" value="10.0" />
+	<!-- 
 	<plugin name="cordova-plugin-websqldatabase-initializer"  source="npm" /> 
 	
 	<plugin name="cordova-sqlite-legacy-build-support"  source="npm" /> 
