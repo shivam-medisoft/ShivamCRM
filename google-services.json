@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "940836237549",
+    "firebase_url": "https://shivam-crm-b5007.firebaseio.com",
+    "project_id": "shivam-crm-b5007",
+    "storage_bucket": "shivam-crm-b5007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940836237549:android:f8a292892f7ae8d1e39ce4",
+        "android_client_info": {
+          "package_name": "com.shivam.crm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940836237549-u3qk90je6jjhv4l0t9dck3ueok2rnv8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shivam.crm",
+            "certificate_hash": "7049bec060c5c5e73f2281cbfa3013ce44b31860"
+          }
+        },
+        {
+          "client_id": "940836237549-16b1gc9e2b6g6g2nq9eeheapj2pp6g8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtFI4R6E1-YHHCFUbWEj6iVON2UD1nbQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940836237549-16b1gc9e2b6g6g2nq9eeheapj2pp6g8e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "940836237549-k6gfp19v4599414d051ltvhu99nht1p7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shivam.crm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
