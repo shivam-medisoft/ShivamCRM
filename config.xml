@@ -29,7 +29,7 @@
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" /> 
     <preference name="disable-cursor" value="false" />
-    <preference name="android-targetSdkVersion" value="28"/> 
+    <preference name="android-targetSdkVersion" value="29"/> 
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-installLocation" value="auto" />
     <preference name="LoadingDialog" value="Please wait, the app is loading"/>
