@@ -3,7 +3,7 @@
         xmlns:cdv="http://cordova.apache.org/ns/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.shivam.crm" 
-        version="1.0.7">
+        version="1.0.8">
     <name>ShivamCRM</name>
     <description>
         Shivam Medisoft CRM Using Shivam FrameWork.
@@ -274,5 +274,5 @@
 	  <preference name="AllowBackForwardNavigationGestures" value="true" />
 	    <preference name="Allow3DTouchLinkPreview" value="false" /> -->
     </platform>
-  <engine name="ios" />
+  <engine name="android" />
 </widget>
