@@ -169,7 +169,7 @@
     <!--android spalsh -->
     <splash src="resources/CRMsplash/android/272by482-ldpi.png" density="ldpi" />
     <splash src="resources/CRMsplash/android/362by642-mdpi.png" density="mdpi" />
-    <splash src="resources/CRMsplash/android/542x962-hdpi.png" density="hdpi" />
+    <splash src="resources/CRMsplash/android/542by962-hdpi.png" density="hdpi" />
     <splash src="resources/CRMsplash/android/722by1282-xhdpi.png" density="xhdpi" />
   
 	</platform>
