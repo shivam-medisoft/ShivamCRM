@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--https://github.com/phonegap/phonegap-start/blob/master/www/config.xml   pwd: Soujanya1-->
 <widget xmlns="http://www.w3.org/ns/widgets" 
-        xmlns:cdv="http://cordova.apache.org/ns/1.0"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0" 
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.shivam.crm" 
-        version="1.0.8">
+        version="1.0.8" android-versionCode = "10008">
     <name>ShivamCRM</name>
     <description>
         Shivam Medisoft CRM Using Shivam FrameWork.
@@ -12,16 +14,17 @@
         Shivam SWD Team
     </author>
     <content src="index.html"/>
-   <preference name="permissions" value="none" />
+  <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="true" />
+
+ <preference name="fullscreen" value="true" />
+    <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
      <preference name="StatusBarBackgroundColor" value="#31708F" />
     <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-	<preference name="fullscreen" value="true" />
+    <preference name="exit-on-suspend" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" /> 
@@ -33,52 +36,26 @@
     <preference name="AllowInlineMediaPlayback" value="true"/>
     <preference name="SplashScreenDelay" value="0000"/>
     <preference name="KeepRunning" value="true"/>
-	
      <preference name="SplashMaintainAspectRatio" value="true" />
-	 <preference name="webviewbounce" value="false" />
+	  <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
-	
-	<preference name="deployment-target" value="10.0" />
-	<!-- 
-	<plugin name="cordova-plugin-websqldatabase-initializer"  source="npm" /> 
-	
-	<plugin name="cordova-sqlite-legacy-build-support"  source="npm" /> 
-	<plugin name="cordova-sqlite-storage"  source="npm" /> 
-	 <plugin name="cordova-sqlite-legacy-build-support"  source="npm" /> 
-<plugin name="cordova-sqlite-storage"  source="npm" />
-
-	<plugin name="cordova-plugin-wkwebview-engine"  source="npm" /> 
-	<plugin name="cordova-plugin-wkwebviewxhrfix" />
-	
-	<plugin name="cordova-plugin-wkwebview-file-xhr"  source="npm" />
-	-->
-<!-- <plugin name="cordova-plugin-httpd-cors"  source="npm" /> 
- <plugin name="cordova-plugin-ionic-webview"  source="npm" />
- <preference name="scheme" value="app" />
-<preference name="hostname" value="localhost" />
--->
-	  
-	
-    <plugin name="cordova.plugins.diagnostic" />
+     <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
-   <!--  Plugins -->
-    
+    <!-- Plugins -->
+      <feature name="http://api.phonegap.com/1.0/file" />
 
+    <feature name="http://api.phonegap.com/1.0/network" />
+
+    <feature name="http://api.phonegap.com/1.0/notification" />
     <!-- Core plugins -->
 	<plugin name="cordova-plugin-camera" source="npm"/>
-       <!--    <plugin spec="https://github.com/apache/cordova-plugin-camera.git" source="git" />-->
      <plugin name="cordova-plugin-camera" source="npm" >
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
         <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
     </plugin>
-    <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="cordova-plugin-dialogs" source="npm"/>
-
-
 <plugin name="cordova-plugin-media-capture" source="npm"/>
-    <!--    <plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />  -->
     <plugin name="cordova-plugin-media-capture" source="npm" >
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
         <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
@@ -86,8 +63,6 @@
     </plugin>  
      <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer" source="npm"  />
-    <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="cordova-plugin-dialogs" source="npm"/>
   
      <plugin name="cordova-plugin-geolocation" source="npm" />
      
@@ -100,65 +75,62 @@
     </edit-config>
     <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
         <string>need location access to find things nearby</string>
-    </edit-config> 
-	    <edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
-        <string>need location access to find things nearby</string>
     </edit-config>
-
+	    
 <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
     <string>need photo library access to save pictures there</string>
 </edit-config>
-
 </platform>
- 
-	<plugin name="cordova-plugin-dialogs" source="npm" />
-	<plugin name="cordova-plugin-splashscreen" source="npm" />
-    <plugin name="cordova-plugin-network-information" source="npm" />
-    <plugin name="cordova-plugin-networkinterface" source="npm" />
-     <plugin name="cordova-plugin-fileviewer2" source="npm" />
-	 <plugin name="cordova-plugin-vha-fileopener2" source="npm" />
-     <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="cordova-plugin-spinnerdialog" source="npm" />
-	
-	
-    <plugin name="cordova-plugin-statusbar" />
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-splashscreen" />
-  
-	<plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
+
+   
 	
 <!--    for android--> 
 	<plugin name="cordova-plugin-badge" source="npm"  />
-	<plugin name="phonegap-plugin-push" source="npm" />
-	<!-- <plugin name="phonegap-plugin-push" spec="~1.10.0" >
-       <variable name="SENDER_ID" value="940836237549" />
-    </plugin>--> 
-    <plugin name="cordova-plugin-file" source="npm"  />
-    <plugin name="cordova-plugin-file-transfer"/>
   <plugin name="cordova-plugin-phonedialer" source="npm" />
     <plugin name="cordova-plugin-x-socialsharing" source="npm" />
-    <plugin name="cordova-plugin-fileopener" source="npm" />
-       <plugin name="cordova-plugin-whitelist" source="npm" />
-    <plugin name = "cordova-plugin-inappbrowser" source="npm" />
     <plugin name= "cordova-plugin-print-pdf" source="npm"/>
 	
-	<plugin name= "cordova-plugin-market" source="npm"/>
-	<plugin name= "cordova-plugin-app-version" source="npm"/>
-	<plugin name= "cordova-plugin-keyboard" source="npm"/>
-	<plugin name= "cordova-plugin-openfilenative" source="npm"/>
-	<plugin name= "cordova-plugin-statusbar" source="npm"/>
-	<!--
-	<plugin name= "cordova-plugin-migrate-localstorage" source="npm"/>
- 
-<plugin name= "cordova-plugin-ionic-webview-openblank" source="npm"/> 
-<plugin name= "cordova-plugin-migrate-localstorage" source="npm"/>
-<plugin name= "cordova-plugin-ionic-migrate-ios-storage" source="npm"/>
-<plugin name= "cordova-plugin-ionic-webview-file-xhr" source="npm"/>
- <plugin name= "cordova-plugin-cors" source="npm"/>
-<plugin name= "cordova-plugin-detect-webview-engine" source="npm"/> 
--->
+    
+
+
+	<plugin name="cordova-filechooser" spec="https://github.com/ihadeed/cordova-filechooser.git" source="git" />
+  
+	 <plugin name="cordova-plugin-device" spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
+    <plugin name="cordova-plugin-device-motion" spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
+    <plugin name="cordova-plugin-device-orientation" spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
+    <plugin name="cordova-plugin-dialogs" spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
+    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git" />
+    <plugin name="cordova-plugin-network-information" spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
+    <plugin name="NetworkInterfacePlugin" spec="https://github.com/salbahra/NetworkInterfacePlugin.git" source="git" />
+     
+ <!-- <plugin name="cordova-plugin-app-version" spec="https://github.com/whiteoctober/cordova-plugin-app-version" source="git" />
+ <plugin name="FileOpener" spec="https://github.com/rafelbev/FileOpener" source="git" /> 
+<plugin name="FileOpener" spec="https://github.com/antonioJASR/FileOpener.git" source="git" /> -->
+<plugin name="cordova-plugin-androidx" source="npm"/>
+	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
+	<plugin name="cordova-plugin-advanced-http" source="npm"/>
 
 	
+    <plugin name="cordova-plugin-fileopener" source="npm" />
+	<plugin name="cordova-plugin-app-version" source="npm" />
+    <plugin name="cordova-plugin-datepicker" spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
+    <plugin name="SpinnerDialog" spec="https://github.com/Paldom/SpinnerDialog.git" source="git" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
+    <plugin name="cordova-plugin-keyboard" spec="https://github.com/cjpearson/cordova-plugin-keyboard" source="git" />
+    <plugin name="cordova-plugin-openfilenative" spec="https://github.com/andischerer/cordova-plugin-openfilenative.git" source="git" />
+    <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
+    <plugin name="cordova-plugin-market" spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
+	<plugin name="cordova-plugin-qr-barcode-scanner" source="npm" />
+	 
+   <plugin name="phonegap-plugin-push" spec="~1.10.0">
+        <variable name="SENDER_ID" value="1:940836237549:android:f8a292892f7ae8d1e39ce4" />
+    </plugin>
+    
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
+        <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyCtFI4R6E1-YHHCFUbWEj6iVON2UD1nbQU}"/>
+    </plugin>
+
+	 <icon src="resources/CRMicons/android/icon.png" />
 <platform name="android">   
 	<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
             <application android:networkSecurityConfig="@xml/network_security_config" />
