@@ -1,10 +1,10 @@
 {
   "name": "shivamcrm",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "index.html",
   "description": "Shivam CRM App",
   "dependencies": {
-  "cordova-android": "^8.0.0"
+  "cordova-ios": "6.2.0"
   },
   "devDependencies": {},
   "scripts": {},
