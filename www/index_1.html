@@ -91,6 +91,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
   $(document).ready(function () {
                 loadcssfiles(cssFilesArr);
 		try {
+			 alert("ios checking in document ready");
 		    document.addEventListener('deviceready', function onDeviceReadyversion() {
 			try {
 			    cordova.getAppVersion.getVersionNumber().then(function (version) {
@@ -109,6 +110,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
   });
   function inputload(){
       //confirm(location.href);
+	     alert("ios checking inputload");
       var fromlogin = 0;
       
       if(location.href.indexOf("isFromLogin") != -1){
