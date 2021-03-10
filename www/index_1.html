@@ -91,7 +91,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
   $(document).ready(function () {
                 loadcssfiles(cssFilesArr);
 		try {
-			 alert("ios checking in document ready");
+			 alert("ios checking in document on ready");
 		    document.addEventListener('deviceready', function onDeviceReadyversion() {
 			try {
 			    cordova.getAppVersion.getVersionNumber().then(function (version) {
