@@ -250,5 +250,5 @@
 	  <preference name="AllowBackForwardNavigationGestures" value="true" />
 	    <preference name="Allow3DTouchLinkPreview" value="false" /> -->
     </platform>
-  <engine name="android" />
+  <engine name="ios" />
 </widget>
