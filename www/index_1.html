@@ -89,8 +89,10 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 }
 
   $(document).ready(function () {
+	  debugger;
                 loadcssfiles(cssFilesArr);
 		try {
+			debugger;
 			 alert("ios checking in document on ready");
 		    document.addEventListener('deviceready', function onDeviceReadyversion() {
 			try {
@@ -109,6 +111,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
                 
   });
   function inputload(){
+	  debugger;
       //confirm(location.href);
 	     alert("ios checking inputload");
       var fromlogin = 0;
