@@ -96,6 +96,8 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 			 alert("ios checking in document on ready");
 		    document.addEventListener('deviceready', function onDeviceReadyversion() {
 			try {
+				debugger;
+				alert("Ready() Try{}");
 			    cordova.getAppVersion.getVersionNumber().then(function (version) {
 				$('.lblversion').text(version);
 				$('.versiondiv').css("display", "block");
@@ -103,6 +105,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 				localStorage.installappver = version;
 			    });
 			} catch (err) {
+				alert("Ready() Catch(){}"+err);
 			}
 			DeviceregonDeviceReady();
 		    });
