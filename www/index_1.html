@@ -125,21 +125,21 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
       }
 	  try{
       if(fromlogin == 1){
-	    //  alert("fromlogin 1");
+	     alert("fromlogin 1");
        var inputVal=$("input.inputclass").val().trim();
-       //confirm("here");
+       confirm("here");
        if ("iphospname" in localStorage) {
-	    //   alert("iphospname in localStorage");
+	      alert("iphospname in localStorage");
            if(localStorage.iphospname == "@@@"){
-		//   alert("first");
+		  alert("first");
                $('#divformid').hide();
            }
        }else{
-	      // alert("second");
+	      alert("second");
            $('#divformid').show();
        }
    }else{
-	 //  alert("third");
+	  alert("third");
 	  // $("#divformid").addClass("divformid");
        $('#divformid').show();
    }
