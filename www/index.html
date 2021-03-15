@@ -228,7 +228,7 @@ and open the template in the editor.
         <script>
             function check() {
                 debugger;
-                
+                alert("check() from index.html");
                 try{ 
                     var deviceType = (navigator.userAgent.match(/iPad/i)) == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i)) == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null"; 
 //                   confirm(deviceType); 
@@ -305,10 +305,12 @@ and open the template in the editor.
                 if(location.href.indexOf("show=1") == -1){
 			 event.stopPropagation();
     event.preventDefault();
+		alert("1 >>index.html");	
 		location.href = 'index_1.html?ab=1&isFromLogin=1';
             }else{
 		     event.stopPropagation();
     event.preventDefault();
+		    alert("2 >>index.html");
                 location.href = 'index_1.html';
             }
 //                if (localStorage.appurl !== undefined) {
