@@ -114,41 +114,42 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
                 
   });
   function inputload(){
-	  debugger;
-      confirm(location.href);
-	     alert("ios checking inputload");
-      var fromlogin = 0;
+  	debugger;
+      	confirm(location.href);
+     	alert("ios checking inputload");
+      	var fromlogin = 0;
       
-      if(location.href.indexOf("isFromLogin") != -1){
-         alert("inside");
-          fromlogin = 1;
-      }
-	  try{
-      if(fromlogin == 1){
-	     alert("fromlogin 1");
-       var inputVal=$("input.inputclass").val().trim();
-       confirm("here");
-       if ("iphospname" in localStorage) {
-	      alert("iphospname in localStorage");
-           if(localStorage.iphospname == "@@@"){
-		  alert("first");
-               $('#divformid').hide();
-           }
-       }else{
-	      alert("second");
-           $('#divformid').show();
-       }
-   }else{
-	  alert("third");
-	  // $("#divformid").addClass("divformid");
-       $('#divformid').show();
-   }
-	  }catch(err){alert("error is" + err);}
-   if(inputVal!==''){
-        $('.lblnm').addClass('active');
-//        $('.lblnm').css('position','relative');
-//        $('.lblnm').css('padding-top','0px');
-   }
+      	if(location.href.indexOf("isFromLogin") != -1){
+		alert("inside");
+          	fromlogin = 1;
+      	}
+	try{
+		if(fromlogin == 1){
+			alert("fromlogin 1");
+			var inputVal=$("input.inputclass").val().trim();
+		       confirm("here");
+		       if ("iphospname" in localStorage) {
+				alert("iphospname in localStorage");
+				if(localStorage.iphospname == "@@@"){
+					alert("first");
+					$('#divformid').hide();
+				}
+		       }else{
+				alert("second");
+				$('#divformid').show();
+		       }
+		}else{
+			alert("third");
+			// $("#divformid").addClass("divformid");
+			$('#divformid').show();
+		}
+	}catch(err){alert("error is" + err);}
+	if(inputVal!==''){
+		alert("inputVal >> "+inputVal);
+		$('.lblnm').addClass('active');
+	//        $('.lblnm').css('position','relative');
+	//        $('.lblnm').css('padding-top','0px');
+   	}
   }
   
    $(document).on('focus active', '.form-control',function(){
