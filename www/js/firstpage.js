@@ -60,6 +60,8 @@ try{
 //        location.href = 'locations.html';
     }
     }catch(err){
+	    alert("Error is :: "+err);
+	    console.log("Error is :: "+err);
         location.href = 'index_1.html';
     }
 }
