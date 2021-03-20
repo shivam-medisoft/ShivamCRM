@@ -61,8 +61,8 @@ try{
     }
     }catch(err){
 	    alert("Error is :: "+err);
-//         location.href = 'index_1.html';
-	   location.href = 'index_1.html?ab=1&isFromLogin=1';
+        location.href = 'index_1.html';
+// 	   location.href = 'index_1.html?ab=1&isFromLogin=1';
     }
 }
 
