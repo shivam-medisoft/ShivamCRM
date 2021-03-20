@@ -134,17 +134,16 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 			var inputVal=$("input.inputclass").val().trim();
 		       confirm("here");
 		       if ("iphospname" in localStorage) {
-				alert("iphospname in localStorage"+localStorage.iphospname);
-			       //commented below 4 lines 
-// 				if(localStorage.iphospname == "@@@"){
-// 					alert("first");
-// 					$('#divformid').hide();
-// 				}
+				alert("iphospname in localStorage"+localStorage.iphospname);			 
+				if(localStorage.iphospname == "@@@"){
+					alert("first");
+					$('#divformid').hide();
+				}
 			       // Added below 4 lines
-			       if(hospnm.includes("@@@")){
-				       alert("From hospnm.includes("@@@") ")
-			       		$('#divformid').show();
-			   	}
+// 			       if(hospnm.includes("@@@")){
+// 				       alert("From hospnm.includes("@@@") ")
+// 			       		$('#divformid').show();
+// 			   	}
 		       }else{
 				alert("second");
 				$('#divformid').show();
