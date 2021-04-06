@@ -373,9 +373,9 @@ function loadsinglereport() {
 }
 var cnt=0;
 function loadpage(pageid, rights,label,thisid) {
-  alert("thisid="+$(thisid).attr("formid"));
+  //alert("thisid="+$(thisid).attr("formid"));
     debugger;
-   alert("loadpage fn js/dashboardmenubuttons.js");
+  // alert("loadpage fn js/dashboardmenubuttons.js");
 try{localStorage.apptback = 0;}catch(err){}
     if(localStorage.neo!="1"){
          var backnew="1";
