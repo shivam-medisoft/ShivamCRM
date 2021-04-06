@@ -60,7 +60,7 @@ try{
 //        location.href = 'locations.html';
     }
     }catch(err){
-	    alert("Error is :: "+err);
+	    alert("firstpage.js Error is :: "+err);
         location.href = 'index_1.html';
 // 	   location.href = 'index_1.html?ab=1&isFromLogin=1';
     }
@@ -69,13 +69,13 @@ try{
 function checkdefaultconfig()
 {
     debugger;
-	//try{
-//alert("in firstpage.js checkdefaultconfig start");
+	try{
+alert("in firstpage.js checkdefaultconfig start");
     var db = window.openDatabase("Database", "1.1", "SHIVAMDB", 20000);
-	//alert("in firstpage.js checkdefaultconfig after var db");
+	alert("in firstpage.js checkdefaultconfig after var db");
     db.transaction(dqueryDBi, derrorCBi);
-//alert("in firstpage.js checkdefaultconfig end");
-	//}catch(err){alert("err is : " + err};
+alert("in firstpage.js checkdefaultconfig end");
+	}catch(err){alert("err is : " + err};
 }
 
 function dqueryDBi(tx)
