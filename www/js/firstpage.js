@@ -75,7 +75,7 @@ alert("in firstpage.js checkdefaultconfig start");
 	alert("in firstpage.js checkdefaultconfig after var db");
     db.transaction(dqueryDBi, derrorCBi);
 alert("in firstpage.js checkdefaultconfig end");
-	}catch(err){alert("err is : " + err};
+	}catch(err){alert("checkdefaultconfig() --> err is : " + err)};
 }
 
 function dqueryDBi(tx)
