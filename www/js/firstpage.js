@@ -70,12 +70,14 @@ function checkdefaultconfig()
 {
     debugger;
 	try{
-alert("in firstpage.js checkdefaultconfig start");
+// alert("in firstpage.js checkdefaultconfig start");
     var db = window.openDatabase("Database", "1.1", "SHIVAMDB", 20000);
-	alert("in firstpage.js checkdefaultconfig after var db");
+// 	alert("in firstpage.js checkdefaultconfig after var db");
     db.transaction(dqueryDBi, derrorCBi);
-alert("in firstpage.js checkdefaultconfig end");
-	}catch(err){alert("checkdefaultconfig() --> err is : " + err)};
+// alert("in firstpage.js checkdefaultconfig end");
+	}catch(err){
+// 		alert("checkdefaultconfig() --> err is : " + err)
+	};
 }
 
 function dqueryDBi(tx)
