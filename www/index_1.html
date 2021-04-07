@@ -93,7 +93,7 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
                 loadcssfiles(cssFilesArr);
 		try {
 			debugger;
-			 alert("ios checking in document on ready");
+// 			 alert("ios checking in document on ready");
 		    document.addEventListener('deviceready', function onDeviceReadyversion() {
 			try {
 				debugger;
@@ -115,28 +115,28 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
   });
   function inputload(){
   	debugger;
-      	confirm(location.href);
+//       	confirm(location.href);
 	//  localStorage.iphospname = "";
-     	alert("ios checking inputload");
+//      	alert("ios checking inputload");
       	var fromlogin = 0;
       
       	if(location.href.indexOf("isFromLogin") != -1){
-		alert("inside");
+// 		alert("inside");
           	fromlogin = 1;
       	}
 	try{
 		debugger;
-		alert("localStorage.iphospname "+localStorage.iphospname);
+// 		alert("localStorage.iphospname "+localStorage.iphospname);
 		var hospnm = localStorage.iphospname;
-		alert("Hospnm >> "+hospnm);
+// 		alert("Hospnm >> "+hospnm);
 		if(fromlogin == 1){
-			alert("fromlogin 1");
+// 			alert("fromlogin 1");
 			var inputVal=$("input.inputclass").val().trim();
-		       confirm("here");
+// 		       confirm("here");
 		       if ("iphospname" in localStorage) {
-				alert("iphospname in localStorage"+localStorage.iphospname);			 
+// 				alert("iphospname in localStorage"+localStorage.iphospname);			 
 				if(localStorage.iphospname == "@@@"){
-					alert("first");
+// 					alert("first");
 					$('#divformid').hide();
 				}
 			       // Added below 4 lines
@@ -145,11 +145,11 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
 // 			       		$('#divformid').show();
 // 			   	}
 		       }else{
-				alert("second");
+// 				alert("second");
 				$('#divformid').show();
 		       }
 		}else{
-			alert("third");
+// 			alert("third");
 			// $("#divformid").addClass("divformid");
 			$('#divformid').show();
 		}
