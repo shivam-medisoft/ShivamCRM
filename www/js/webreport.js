@@ -414,19 +414,25 @@ function subdeptview1(id)
      var sdeptid=localStorage.sdeptid ;
      var deptid= localStorage.deptid;
     var url = localStorage.ipadrs + "globalreport";
-    url += "?Createsubdeptview=SubDeptView&view_qry=" + strqry + '&sdeptid='+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';
+    //url += "?Createsubdeptview=SubDeptView&view_qry=" + strqry + '&sdeptid='+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';
+	// Added below requsert start
+	url += "?Createsubdeptview=SubDeptView&sdeptid="+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';            
+            $.post(url,{'view_qry' : strqry}, function (responseJson) {  
+               showsingle();               
+       });
+	// Added Above request end
+//     $.ajax({
+//         type: 'POST',
+//         url: url,
+//         traditional: true,
+//         async: false, //this property block popups
+//         success: function () {
+//             showsingle();
 
-    $.ajax({
-        type: 'POST',
-        url: url,
-        traditional: true,
-        async: false, //this property block popups
-        success: function () {
-            showsingle();
-
-        }
-    });
+//         }
+//     });
     //        });
+	
 }
 function logout() {
      localStorage.repback='1';
