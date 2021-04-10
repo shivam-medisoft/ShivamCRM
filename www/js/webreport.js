@@ -573,9 +573,11 @@ function showsingle() {
     txtVerify = encodeURIComponent(txtVerify);
     var fromtm = document.getElementById('txtFromTime').value;
     var totm = document.getElementById('txtToTime').value;
-    var path = localStorage.ipadrs + 'globalreport?desc=' + txtDesc + '&subdeptname=' + subdeptname + '&varify=' + txtVerify + '&type=' + type + '&sname=' + sname + '&sname1=' + sname1 + '&fromdt=' + fromdt + '&todt=' + todt + '&locid=' + locid + '&reportid=' + reportid + '&locnm=' + locnm + '&spid=' + sid + '&chkparamall=' + chkparamall + '&chkmsexcel=' + chkmsexcel + '&fromtm=' + fromtm + '&totm=' + totm + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mnewflg=1&mobile=1';
+//     var path = localStorage.ipadrs + 'globalreport?desc=' + txtDesc + '&subdeptname=' + subdeptname + '&varify=' + txtVerify + '&type=' + type + '&sname=' + sname + '&sname1=' + sname1 + '&fromdt=' + fromdt + '&todt=' + todt + '&locid=' + locid + '&reportid=' + reportid + '&locnm=' + locnm + '&spid=' + sid + '&chkparamall=' + chkparamall + '&chkmsexcel=' + chkmsexcel + '&fromtm=' + fromtm + '&totm=' + totm + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mnewflg=1&mobile=1';
+    var url = localStorage.ipadrs + 'globalreport';	
+    $.post(url,{desc:txtDesc,subdeptname : subdeptname ,varify: txtVerify, type : type, sname : sname, sname1 : sname1, fromdt : fromdt, todt : todt, locid : locid, reportid : reportid, locnm : locnm, spid : sid, chkparamall : chkparamall, chkmsexcel : chkmsexcel, fromtm : fromtm, totm : totm, userid : userid, usernm : usernm, loginlocid : loginlocid, mnewflg : "1", mobile : "1"}, function (responseText) {	
     //window.open('globalreport?desc=' + txtDesc + '&subdeptname=' + subdeptname + '&varify=' + txtVerify + '&type=' + type + '&sname=' + sname + '&sname1=' + sname1 + '&fromdt=' + fromdt + '&todt=' + todt + '&locid=' + locid + '&reportid=' + reportid + '&locnm=' + locnm + '&spid=' + sid + '&chkparamall=' + chkparamall + '&chkmsexcel=' + chkmsexcel + '&fromtm=' + fromtm + '&totm=' + totm, '_blank', '');
-    $.get(path, function (responseText) {
+//     $.get(path, function (responseText) {
         if (responseText.indexOf("error") < 0) {
 //            var pdfpath = localStorage.ipadrs + "//pdfjs-1.1.366-dist/web/viewer.jsp?mrno=" + responseText;
 //            localStorage.pdfpath = pdfpath;
