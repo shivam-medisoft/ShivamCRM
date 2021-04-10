@@ -381,7 +381,7 @@ alert("createmultideptview() ---1");
 function subdeptview1(id)
 {
     debugger;
-	alert(subdeptview1(id) --- 1");
+	alert("subdeptview1(id) --- 1");
     try{ var htldo = window.innerHeight;
           var asgnmrgn=htldo/2;
           $('#mydiv .imgnload').css("margin-top",parseInt(asgnmrgn)+-50+"px");
