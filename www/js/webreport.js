@@ -419,10 +419,11 @@ function subdeptview1(id)
     var url = localStorage.ipadrs + "globalreport";
     //url += "?Createsubdeptview=SubDeptView&view_qry=" + strqry + '&sdeptid='+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';
 	// Added below requsert start
-	url += "?Createsubdeptview=SubDeptView&sdeptid="+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';            
-            $.post(url,{'view_qry' : strqry}, function (responseJson) {  
+// 	url += "?Createsubdeptview=SubDeptView&sdeptid="+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';            
+//             $.post(url,{'view_qry' : strqry}, function (responseJson) {  
+	$.post(url,{Createsubdeptview : "Createsubdeptview",sdeptid : sdeptid,deptid : deptid,strnames : strnames, fromdt : $('#txtFrom').val(), todt : $('#txtTo').val(), userid : userid, usernm : usernm, loginlocid : loginlocid, mobile : "1",view_qry : strqry}, function (responseJson) {  
                showsingle();               
-       }).fail(function(error) { alert(error.responseJSON) });
+       }).fail(function(error) { alert(error.responseJSON); });
 	// Added Above request end
 //     $.ajax({
 //         type: 'POST',
