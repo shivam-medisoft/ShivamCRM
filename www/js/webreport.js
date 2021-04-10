@@ -422,7 +422,7 @@ function subdeptview1(id)
 	url += "?Createsubdeptview=SubDeptView&sdeptid="+sdeptid+'&deptid='+deptid+'&strnames=' + strnames + '&fromdt=' + $('#txtFrom').val() + '&todt=' + $('#txtTo').val() + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mobile=1';            
             $.post(url,{'view_qry' : strqry}, function (responseJson) {  
                showsingle();               
-       });
+       }).fail(function(error) { alert(error.responseJSON) });
 	// Added Above request end
 //     $.ajax({
 //         type: 'POST',
