@@ -106,6 +106,7 @@ function check() {
 function show() {
 
     debugger;
+	alert("show() -- webreport.js");
     try{ var htldo = window.innerHeight;
           var asgnmrgn=htldo/2;
           $('#mydiv .imgnload').css("margin-top",parseInt(asgnmrgn)+-50+"px");
@@ -141,6 +142,7 @@ function show() {
     } else {
         chkmsexcel = 2;
     }
+   debugger;	
     var txtDesc = document.getElementById('txtDesc').textContent;
     txtDesc = encodeURIComponent(txtDesc);
     var txtVerify = document.getElementById('txtVerify').textContent;
@@ -152,7 +154,7 @@ function show() {
     var userid = localStorage.userid;
     var usernm = localStorage.usernm;
     var loginlocid = localStorage.locid;
-   
+   alert("show() 2 -- webreport.js");
     var path = localStorage.ipadrs + 'globalreport?desc=' + txtDesc + '&varify=' + txtVerify +
             '&type=' + type + '&fromdt=' + fromdt + '&todt=' + todt + '&locid=' + locid + '&reportid='
             + reportid + "&locnm=" + locnm + '&chkmsexcel=' + chkmsexcel + '&fromtm=' + fromtm +
@@ -344,7 +346,7 @@ function createmultideptview()
 {
     //multi dept
     debugger;
-
+alert("createmultideptview() ---1");
     if (document.getElementById("rdbmulti").checked === true)
     {
         var deptid = "", deptnm = "";
@@ -379,6 +381,7 @@ function createmultideptview()
 function subdeptview1(id)
 {
     debugger;
+	alert(subdeptview1(id) --- 1");
     try{ var htldo = window.innerHeight;
           var asgnmrgn=htldo/2;
           $('#mydiv .imgnload').css("margin-top",parseInt(asgnmrgn)+-50+"px");
@@ -578,6 +581,7 @@ function showsingle() {
     $.post(url,{desc:txtDesc,subdeptname : subdeptname ,varify: txtVerify, type : type, sname : sname, sname1 : sname1, fromdt : fromdt, todt : todt, locid : locid, reportid : reportid, locnm : locnm, spid : sid, chkparamall : chkparamall, chkmsexcel : chkmsexcel, fromtm : fromtm, totm : totm, userid : userid, usernm : usernm, loginlocid : loginlocid, mnewflg : "1", mobile : "1"}, function (responseText) {	
     //window.open('globalreport?desc=' + txtDesc + '&subdeptname=' + subdeptname + '&varify=' + txtVerify + '&type=' + type + '&sname=' + sname + '&sname1=' + sname1 + '&fromdt=' + fromdt + '&todt=' + todt + '&locid=' + locid + '&reportid=' + reportid + '&locnm=' + locnm + '&spid=' + sid + '&chkparamall=' + chkparamall + '&chkmsexcel=' + chkmsexcel + '&fromtm=' + fromtm + '&totm=' + totm, '_blank', '');
 //     $.get(path, function (responseText) {
+	    debugger;
         if (responseText.indexOf("error") < 0) {
 //            var pdfpath = localStorage.ipadrs + "//pdfjs-1.1.366-dist/web/viewer.jsp?mrno=" + responseText;
 //            localStorage.pdfpath = pdfpath;
