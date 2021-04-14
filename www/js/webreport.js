@@ -106,7 +106,7 @@ function check() {
 function show() {
 
     debugger;
-	alert("show() -- webreport.js");
+	//alert("show() -- webreport.js");
     try{ var htldo = window.innerHeight;
           var asgnmrgn=htldo/2;
           $('#mydiv .imgnload').css("margin-top",parseInt(asgnmrgn)+-50+"px");
@@ -346,7 +346,7 @@ function createmultideptview()
 {
     //multi dept
     debugger;
-alert("createmultideptview() ---1");
+//alert("createmultideptview() ---1");
     if (document.getElementById("rdbmulti").checked === true)
     {
         var deptid = "", deptnm = "";
@@ -381,7 +381,7 @@ alert("createmultideptview() ---1");
 function subdeptview1(id)
 {
     debugger;
-	alert("subdeptview1(id) --- 1");
+	//alert("subdeptview1(id) --- 1");
     try{ var htldo = window.innerHeight;
           var asgnmrgn=htldo/2;
           $('#mydiv .imgnload').css("margin-top",parseInt(asgnmrgn)+-50+"px");
@@ -447,7 +447,7 @@ function logout() {
 function showsingle() {
 
     debugger;
-alert("Hey From showsingle()");
+//alert("Hey From showsingle()");
     var type = document.getElementById("typevalue").value;
     var reportid = localStorage.reportid;
     var fromdt = document.getElementById("txtFrom").value;
@@ -576,7 +576,7 @@ alert("Hey From showsingle()");
     var txtVerify = document.getElementById('txtVerify').textContent;
     txtVerify = encodeURIComponent(txtVerify);
     var fromtm = document.getElementById('txtFromTime').value;
-	alert("Hey From showsingle() before sendinf Request");
+	//alert("Hey From showsingle() before sendinf Request");
     var totm = document.getElementById('txtToTime').value;
 //     var path = localStorage.ipadrs + 'globalreport?desc=' + txtDesc + '&subdeptname=' + subdeptname + '&varify=' + txtVerify + '&type=' + type + '&sname=' + sname + '&sname1=' + sname1 + '&fromdt=' + fromdt + '&todt=' + todt + '&locid=' + locid + '&reportid=' + reportid + '&locnm=' + locnm + '&spid=' + sid + '&chkparamall=' + chkparamall + '&chkmsexcel=' + chkmsexcel + '&fromtm=' + fromtm + '&totm=' + totm + '&userid=' + userid + '&usernm=' + usernm + '&loginlocid=' + loginlocid + '&mnewflg=1&mobile=1';
     var url = localStorage.ipadrs + 'globalreport';	
