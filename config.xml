@@ -5,8 +5,8 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.shivam.crm" 
-        version="1.0.9" 
-	android-versionCode="10009" >
+        version="1.1.0" 
+	android-versionCode="1001o" >
     <name>ShivamCRM</name>
     <description>
         Shivam Medisoft CRM Using Shivam FrameWork.
