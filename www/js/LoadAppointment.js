@@ -57,8 +57,10 @@ localStorage.pageNo = "1" ;
     var formid = localStorage.webformid;
     var locid = localStorage.locid;
     //webid='+webformid+'&mrno='+mrno+'&locid='+locid+'&theme='+encodeURIComponent(theme)+'&docid='+mapopdocid+'&speid='+speid
-    path = path + "admin/ScheduleDivPopMobile.jsp?type=getavldates&webid="+formid+'&mrno='+localStorage.mrno+'&locid='+locid+'&theme=&docid='+localStorage.opdocid+'&speid='+localStorage.speid;
-    $.get(path, function (responseText) {
+//     path = path + "admin/ScheduleDivPopMobile.jsp?type=getavldates&webid="+formid+'&mrno='+localStorage.mrno+'&locid='+locid+'&theme=&docid='+localStorage.opdocid+'&speid='+localStorage.speid;
+    path = path + "admin/ScheduleDivPopMobile.jsp";
+    //$.get(path, function (responseText) {
+      $.post(path,{type:"getavldates",webid:formid,mrno:localStorage.mrno,locid:locid,theme:"",docid:localStorage.opdocid,speid:localStorage.speid}, function (responseText) {
         debugger;
         try{
         document.getElementById("formdiv").innerHTML=responseText;
