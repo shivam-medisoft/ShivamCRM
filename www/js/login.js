@@ -921,9 +921,11 @@ $(document).ready(function () {
                     }
                      if(isExists == 0){
          var color = localStorage.themecolor;
-         color = color.replace("%23","#");
-         //confirm(color);
-         chnagecssnew(color);
+         if(color != undefined){                
+             color = color.replace("%23","#");
+             //confirm(color);
+             chnagecssnew(color);
+         }
          //confirm(cssdata);
      }
     })
