@@ -69,7 +69,7 @@
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
         <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
-    </plugin>
+    </plugin> 
 <plugin name="cordova-plugin-media-capture" source="npm" spec="3.0.3"/>
     <plugin name="cordova-plugin-media-capture" source="npm" spec="3.0.3">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
