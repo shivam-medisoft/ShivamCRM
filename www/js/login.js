@@ -641,9 +641,13 @@ $(document).ready(function () {
         var manufacturer = "", platform = "", regid = "", deviceregid = "";
         try {
             manufacturer = localStorage.manufacturer;
-            platform = localStorage.platform;
+            platform = localStorage.platform.toString();
             deviceregid = localStorage.deviceregid;
             uuid = localStorage.uuid;
+            if(platform =="iOS"){
+             deviceregid = localStorage.devicereg;
+            uuid = localStorage.uui;
+            }
         } catch (err) {
 
         }
